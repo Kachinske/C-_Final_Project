@@ -1,4 +1,11 @@
-﻿//Methods
+﻿//Задача. Написать программу, которая из имеющегося массива строк формирует массив и строк, длина которых меньше или равна 3 символа
+
+string[] StringArray = {"Hello", "World", "and", "some", "more", "words", ":-P"};
+Console.WriteLine(string.Join(" ", StringArray));
+string[] OverWritedArray = OverwriteArrayWithWordsCertainLength(StringArray,3);
+Console.WriteLine(string.Join(" ", OverWritedArray));
+
+//Methods
 
 bool CountLetters (string word, int maxletters)
 {
